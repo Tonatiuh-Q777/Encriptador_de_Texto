@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+
+<body>
+    <header></header>
+    <main class="presentacion">
+        <section class="contenido__presentacion">
+             <h1 class="contenido__1"><strong class="titulo__resaltado">Bienvenido(a)</strong> al encriptador / desencriptador de texto</h1>
+                    
+                    <input type="text" id="leyenda" name="leyenda" placeholder="Ingrese texto" required class="cuadro__de__texto">
+                    <input type="text" id="output" placeholder="Resultado" class="cuadro__resultado" readonly>
+
+            <p class="texto__minusculas"> &#128718; Solo letras minúsculas y sin acentos. </p>
+            <div class="botones">
+                <button class="button_E" onclick="encriptar()">Encriptar</button>
+                <button class="button_D" onclick="desencriptar()">Desncriptar</button>
+                <button class="button_D" onclick="copiarAlPortapapeles()">Copiar</button>
+                <button class="button_D" onclick="limpiar()">Limpiar</button>
+            </div>
+       </section>
+        <img src="llave_roja.png" alt="imagen alusiva a encriptar" width="320" height="400">
+    </main>
+        
+    <footer class="footer">
+        <p>Desarrollado por Gustavo Quintero </p>
+    </footer>
+    <script src="encriptador.js"></script>
+    
+</body>
+</html>
